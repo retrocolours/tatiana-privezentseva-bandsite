@@ -1,0 +1,59 @@
+@font-face {
+  font-family: "AvenirNext LT Pro";
+  src: url("../assets/font/AvenirNextLTPro-Demi.woff2") format("woff2"), url("../assets/font/AvenirNextLTPro-Demi.woff") format("woff"), url("../assets/font/AvenirNextLTPro-Demi.ttf") format("truetype");
+  font-weight: 600;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "AvenirNext LT Pro";
+  src: url("../assets/font/AvenirNextLTPro-Bold.woff2") format("woff2"), url("../assets/font/AvenirNextLTPro-Bold.woff") format("woff"), url("../assets/font/AvenirNextLTPro-Bold.ttf") format("truetype");
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "AvenirNext LT Pro";
+  src: url("../assets/font/AvenirNextLTPro-Regular.woff2") format("woff2"), url("../assets/font/AvenirNextLTPro-Regular.woff") format("woff"), url("../assets/font/AvenirNextLTPro-Regular.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: AvenirNext LT Pro;
+}
+
+body {
+  font-family: AvenirNext LT Pro;
+  font-size: 24px;
+  line-height: 32px;
+  font-weight: 700;
+}
+
+a {
+  text-decoration: none;
+}
+
+.nav {
+  background-color: #323232;
+}
+.nav__list {
+  list-style-type: none;
+  display: flex;
+  justify-content: space-around;
+  gap: 10px;
+}
+.nav__list-link {
+  color: #afafaf;
+  font-size: 14px;
+  line-height: 22px;
+  font-weight: 600;
+}
+
+.about__box {
+  display: flex;
+  flex-direction: column;
+}/*# sourceMappingURL=main.css.map */
