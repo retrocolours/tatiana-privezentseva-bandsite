@@ -122,17 +122,118 @@ a {
 .about__image {
   width: 100%;
   height: 20.9rem;
+  padding-bottom: 0.2rem;
+}
+.about__quote, .about__author {
+  font-size: 1.9rem;
+  line-height: 3rem;
+  font-weight: 600;
+  padding-top: 1.5rem;
+}
+.about__author {
+  padding-top: 0.5rem;
+}
+
+.info__title {
+  font-size: 2rem;
+  font-weight: 600;
+  padding-top: 3.2rem;
+  padding-bottom: 1rem;
+}
+.info__paragraph-1, .info__paragraph-2 {
+  font-size: 1.8rem;
+  font-weight: 400;
+  line-height: 2.5rem;
+  padding-top: 1rem;
+}
+.info__paragraph-1 {
+  padding-bottom: 0.9rem;
+}
+.info__paragraph-2 {
+  padding-bottom: 2rem;
 }
 
 .gallery {
   display: flex;
   flex-direction: column;
   max-width: 100vw;
+  color: #323232;
+  background-color: #fafafa;
+  padding-left: 2rem;
+  padding-right: 2rem;
+  padding-top: 3.5rem;
+  padding-bottom: 1rem;
+}
+.gallery__title {
+  font-size: 3.2rem;
+  font-weight: 600;
+  padding-bottom: 1.9rem;
 }
 .gallery__image {
   margin: 1rem 0.5rem;
+  height: 22rem;
 }
 
 .footer {
   max-width: 100vw;
+  display: flex;
+  flex-direction: column;
+  background-color: #323232;
+  color: #ffffff;
+  padding-left: 2rem;
+  padding-right: 2rem;
+  padding-top: 4rem;
+  gap: 1rem;
+}
+.footer__title {
+  font-size: 3.2rem;
+  font-weight: 600;
+  padding-bottom: 2rem;
+}
+.footer__logos {
+  padding-top: 0.4rem;
+  display: flex;
+  gap: 3.5rem;
+}
+.footer__icons {
+  height: 50px;
+}
+.footer__contact {
+  display: flex;
+  flex-direction: column;
+  gap: 3rem;
+}
+.footer__person {
+  font-weight: 400;
+  font-size: 1.8rem;
+}
+.footer__person-name {
+  font-weight: 600;
+  padding-top: 2rem;
+  padding-bottom: 0.4rem;
+}
+.footer__person-company {
+  font-weight: 600;
+  padding-bottom: 3rem;
+}
+.footer__info-1 {
+  padding-bottom: 0.4rem;
+}
+.footer__email {
+  padding-top: 2.3rem;
+}
+
+.bandsite__logo {
+  display: flex;
+  margin-bottom: 1rem;
+  margin-top: 7rem;
+}
+.bandsite__logo--image {
+  height: 2.5rem;
+}
+
+.copyright {
+  font-weight: 400;
+  font-size: 1.5rem;
+  padding-bottom: 2rem;
 }/*# sourceMappingURL=main.css.map */
