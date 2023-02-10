@@ -10,15 +10,19 @@
   <body>
     <header>
       <nav class="nav">
-        <a class="bandsite__logo" href="./index.html">
+        <a class="nav__logo-link" href="./index.html">
           <img
-            class="bansite__logo-img"
+            class="nav__logo-image"
             src="./assets/Logo/Logo-bandsite.svg"
             alt=""
         /></a>
         <ul class="nav__list">
-          <li class="nav__list-item nav__list-item-highlight">
-            <a class="nav__list-link" href="./index.html">Biography</a>
+          <li class="nav__list-item nav__list-item--highlight">
+            <a
+              class="nav__list-link nav__list-link--highlight"
+              href="./index.html"
+              >Biography</a
+            >
           </li>
           <li class="nav__list-item">
             <a class="nav__list-link" href="#">Shows</a>
@@ -29,15 +33,13 @@
 
     <main>
       <section class="hero">
-        <div class="hero__box">
-          <h1 class="hero__title">The Bees Knees</h1>
-        </div>
+        <h1 class="hero__title">The Bees Knees</h1>
       </section>
 
       <section class="about">
         <div class="about__box">
           <h2 class="about__title">About the Musicians</h2>
-          <img src="./Assets/Images/band.jpg" alt="band" />
+          <img class="about__image" src="./Assets/Images/band.jpg" alt="band" />
           <p class="quote">
             "We push each other to be the best. It’s not uncommon for one of us
             to say ‘this needs to be better, back to the drawing board’”
@@ -74,15 +76,51 @@
       </section>
 
       <section class="gallery">
-        <img class="gallery__image" src="./assets/Images/Photo-gallery-1.jpg" alt="" />
-        <img class="gallery__image" src="./assets/Images/Photo-gallery-2.jpg" alt="" />
-        <img class="gallery__image" src="./assets/Images/Photo-gallery-3.jpg" alt="" />
-        <img class="gallery__image" src="./assets/Images/Photo-gallery-4.jpg" alt="" />
-        <img class="gallery__image" src="./assets/Images/Photo-gallery-5.jpg" alt="" />
-        <img class="gallery__image" src="./assets/Images/Photo-gallery-6.jpg" alt="" />
-        <img class="gallery__image" src="./assets/Images/Photo-gallery-7.jpg" alt="" />
-        <img class="gallery__image" src="./assets/Images/Photo-gallery-8.jpg" alt="" />
-        <img class="gallery__image" src="./assets/Images/Photo-gallery-9.jpg" alt="" />
+        <img
+          class="gallery__image"
+          src="./assets/Images/Photo-gallery-1.jpg"
+          alt=""
+        />
+        <img
+          class="gallery__image"
+          src="./assets/Images/Photo-gallery-2.jpg"
+          alt=""
+        />
+        <img
+          class="gallery__image"
+          src="./assets/Images/Photo-gallery-3.jpg"
+          alt=""
+        />
+        <img
+          class="gallery__image"
+          src="./assets/Images/Photo-gallery-4.jpg"
+          alt=""
+        />
+        <img
+          class="gallery__image"
+          src="./assets/Images/Photo-gallery-5.jpg"
+          alt=""
+        />
+        <img
+          class="gallery__image"
+          src="./assets/Images/Photo-gallery-6.jpg"
+          alt=""
+        />
+        <img
+          class="gallery__image"
+          src="./assets/Images/Photo-gallery-7.jpg"
+          alt=""
+        />
+        <img
+          class="gallery__image"
+          src="./assets/Images/Photo-gallery-8.jpg"
+          alt=""
+        />
+        <img
+          class="gallery__image"
+          src="./assets/Images/Photo-gallery-9.jpg"
+          alt=""
+        />
       </section>
     </main>
     <footer class="footer">
@@ -147,7 +185,7 @@
       /></a>
 
       <div class="copyright">
-          <p>Copyright The Bees Knees © 2021 All Rights Reserved</p>
+        <p>Copyright The Bees Knees © 2021 All Rights Reserved</p>
       </div>
     </footer>
   </body>

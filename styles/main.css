@@ -15,7 +15,7 @@
 @font-face {
   font-family: "AvenirNext LT Pro";
   src: url("../assets/font/AvenirNextLTPro-Regular.woff2") format("woff2"), url("../assets/font/AvenirNextLTPro-Regular.woff") format("woff"), url("../assets/font/AvenirNextLTPro-Regular.ttf") format("truetype");
-  font-weight: normal;
+  font-weight: 400;
   font-style: normal;
   font-display: swap;
 }
@@ -39,27 +39,43 @@ a {
 .nav {
   background-color: #323232;
   width: 100%;
-  padding: 24px 16px;
+  padding-top: 2rem;
   max-width: 100vw;
 }
-.nav .bandsite__logo {
+.nav__logo-link {
   display: flex;
   justify-content: center;
   width: 100%;
   height: 2.5rem;
+  margin-bottom: 1rem;
 }
-.nav .bandsite__logo-img {
+.nav__logo-image {
   width: 100%;
 }
 .nav__list {
   list-style-type: none;
   display: flex;
   justify-content: space-around;
+  width: 100%;
 }
 .nav__list-link {
   color: #afafaf;
-  font-size: 24px;
-  line-height: 32px;
+  font-size: 1.7rem;
+  font-weight: 400;
+  width: 100%;
+}
+.nav__list-item {
+  width: 50%;
+  text-align: center;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+}
+.nav__list-item--highlight {
+  border-bottom: #fff 0.4rem solid;
+}
+.nav__list-link--highlight {
+  color: #fff;
+  font-size: 1.7rem;
   font-weight: 600;
 }
 
@@ -67,31 +83,45 @@ a {
   background-image: url(../assets/Images/hero-bio.jpg);
   background-position: center;
   background-size: cover;
-  height: 22rem;
+  background-blend-mode: darken;
+  background-color: rgba(50, 50, 50, 0.4);
+  height: 24.2rem;
   max-width: 100vw;
-}
-.hero__box {
   display: flex;
-  flex-direction: column;
-  background-color: rgba(50, 50, 50, 0.5);
-  height: 22rem;
+  justify-content: flex-start;
+  align-items: center;
+  padding-left: 2rem;
+  padding-right: 2rem;
   width: 100%;
 }
 .hero__title {
-  padding-top: 9rem;
-  color: #fff;
+  color: #ffffff;
   font-size: 3rem;
   line-height: 32px;
   font-weight: 600;
 }
 
 .about {
+  display: flex;
+  flex-direction: column;
+  padding-top: 3.9rem;
+  padding-left: 2rem;
+  padding-right: 2rem;
   max-width: 100vw;
+  color: #323232;
 }
-
 .about__box {
   display: flex;
   flex-direction: column;
+}
+.about__title {
+  font-size: 3.2rem;
+  font-weight: 600;
+  padding-bottom: 2.5rem;
+}
+.about__image {
+  width: 100%;
+  height: 20.9rem;
 }
 
 .gallery {
