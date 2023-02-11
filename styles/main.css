@@ -42,11 +42,24 @@ a {
   padding-top: 1rem;
   max-width: 100vw;
 }
+@media screen and (min-width: 768px) {
+  .nav {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    padding-top: 0.8rem;
+  }
+}
 .nav__logo-link {
   display: flex;
   justify-content: center;
   width: 100%;
   height: 1.2rem;
+}
+@media screen and (min-width: 768px) {
+  .nav__logo-link {
+    width: 30%;
+  }
 }
 .nav__logo-image {
   width: 100%;
@@ -57,12 +70,22 @@ a {
   justify-content: space-around;
   width: 100%;
 }
+@media screen and (min-width: 768px) {
+  .nav__list {
+    width: 30%;
+  }
+}
 .nav__list-link {
   color: #e1e1e1;
   font-size: 0.8rem;
   font-weight: 400;
   width: 100%;
   height: 100%;
+}
+@media screen and (min-width: 768px) {
+  .nav__list-link {
+    font-size: 0.9rem;
+  }
 }
 .nav__list-link:hover {
   color: #ffffff;
@@ -72,6 +95,12 @@ a {
   width: 50%;
   text-align: center;
 }
+@media screen and (min-width: 768px) {
+  .nav__list-item {
+    padding-bottom: 1rem;
+    width: 30%;
+  }
+}
 .nav__list-item--highlight, .nav__list-item:hover {
   border-bottom: #fff 0.2rem solid;
 }
@@ -79,6 +108,11 @@ a {
   color: #ffffff;
   font-size: 0.8rem;
   font-weight: 600;
+}
+@media screen and (min-width: 768px) {
+  .nav__list-link--highlight {
+    font-size: 0.9rem;
+  }
 }
 
 .hero {
@@ -96,11 +130,22 @@ a {
   padding-right: 1.5rem;
   width: 100%;
 }
+@media screen and (min-width: 768px) {
+  .hero {
+    height: 28.1rem;
+    padding-left: 2.5rem;
+  }
+}
 .hero__title {
   color: #ffffff;
   font-size: 1.5rem;
   line-height: 32px;
   font-weight: 600;
+}
+@media screen and (min-width: 768px) {
+  .hero__title {
+    font-size: 3.5rem;
+  }
 }
 
 .about {
@@ -121,7 +166,6 @@ a {
 }
 .about__image {
   width: 100%;
-  height: 9.7rem;
 }
 .about__quote, .about__author {
   font-size: 0.9rem;
