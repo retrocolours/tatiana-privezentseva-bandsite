@@ -39,15 +39,14 @@ a {
 .nav {
   background-color: #323232;
   width: 100%;
-  padding-top: 2rem;
+  padding-top: 1rem;
   max-width: 100vw;
 }
 .nav__logo-link {
   display: flex;
   justify-content: center;
   width: 100%;
-  height: 2.5rem;
-  margin-bottom: 1rem;
+  height: 1.2rem;
 }
 .nav__logo-image {
   width: 100%;
@@ -59,23 +58,26 @@ a {
   width: 100%;
 }
 .nav__list-link {
-  color: #afafaf;
-  font-size: 1.7rem;
+  color: #e1e1e1;
+  font-size: 0.8rem;
   font-weight: 400;
   width: 100%;
+  height: 100%;
+}
+.nav__list-link:hover {
+  color: #ffffff;
+  width: 50%;
 }
 .nav__list-item {
   width: 50%;
   text-align: center;
-  padding-top: 1rem;
-  padding-bottom: 1rem;
 }
-.nav__list-item--highlight {
-  border-bottom: #fff 0.4rem solid;
+.nav__list-item--highlight, .nav__list-item:hover {
+  border-bottom: #fff 0.2rem solid;
 }
 .nav__list-link--highlight {
-  color: #fff;
-  font-size: 1.7rem;
+  color: #ffffff;
+  font-size: 0.8rem;
   font-weight: 600;
 }
 
@@ -85,18 +87,18 @@ a {
   background-size: cover;
   background-blend-mode: darken;
   background-color: rgba(50, 50, 50, 0.4);
-  height: 24.2rem;
+  height: 11.8rem;
   max-width: 100vw;
   display: flex;
   justify-content: flex-start;
   align-items: center;
-  padding-left: 2rem;
-  padding-right: 2rem;
+  padding-left: 1.5rem;
+  padding-right: 1.5rem;
   width: 100%;
 }
 .hero__title {
   color: #ffffff;
-  font-size: 3rem;
+  font-size: 1.5rem;
   line-height: 32px;
   font-weight: 600;
 }
@@ -104,9 +106,7 @@ a {
 .about {
   display: flex;
   flex-direction: column;
-  padding-top: 3.9rem;
-  padding-left: 2rem;
-  padding-right: 2rem;
+  padding: 1.5rem;
   max-width: 100vw;
   color: #323232;
 }
@@ -115,42 +115,37 @@ a {
   flex-direction: column;
 }
 .about__title {
-  font-size: 3.2rem;
+  font-size: 1.5rem;
   font-weight: 600;
-  padding-bottom: 2.5rem;
+  padding-bottom: 0.5rem;
 }
 .about__image {
   width: 100%;
-  height: 20.9rem;
-  padding-bottom: 0.2rem;
+  height: 9.7rem;
 }
 .about__quote, .about__author {
-  font-size: 1.9rem;
-  line-height: 3rem;
+  font-size: 0.9rem;
+  line-height: 1.4rem;
   font-weight: 600;
-  padding-top: 1.5rem;
+  padding-top: 0.9rem;
 }
 .about__author {
-  padding-top: 0.5rem;
+  padding-top: 0.2rem;
 }
 
 .info__title {
-  font-size: 2rem;
+  font-size: 0.8rem;
   font-weight: 600;
-  padding-top: 3.2rem;
-  padding-bottom: 1rem;
-}
-.info__paragraph-1, .info__paragraph-2 {
-  font-size: 1.8rem;
-  font-weight: 400;
-  line-height: 2.5rem;
   padding-top: 1rem;
 }
-.info__paragraph-1 {
-  padding-bottom: 0.9rem;
+.info__paragraph-1, .info__paragraph-2 {
+  font-size: 0.8rem;
+  font-weight: 400;
+  line-height: 1.2rem;
+  padding-top: 0.4rem;
 }
-.info__paragraph-2 {
-  padding-bottom: 2rem;
+.info__paragraph-1 {
+  padding-bottom: 0.5rem;
 }
 
 .gallery {
@@ -159,19 +154,18 @@ a {
   max-width: 100vw;
   color: #323232;
   background-color: #fafafa;
-  padding-left: 2rem;
-  padding-right: 2rem;
-  padding-top: 3.5rem;
-  padding-bottom: 1rem;
+  padding-top: 1rem;
+  padding-bottom: 0.5rem;
+  padding-right: 1.5rem;
+  padding-left: 1.5rem;
 }
 .gallery__title {
-  font-size: 3.2rem;
+  font-size: 1.5rem;
   font-weight: 600;
-  padding-bottom: 1.9rem;
 }
 .gallery__image {
-  margin: 1rem 0.5rem;
-  height: 22rem;
+  margin-top: 0.5rem;
+  margin-bottom: 0.5rem;
 }
 
 .footer {
@@ -180,60 +174,62 @@ a {
   flex-direction: column;
   background-color: #323232;
   color: #ffffff;
-  padding-left: 2rem;
-  padding-right: 2rem;
-  padding-top: 4rem;
+  padding-left: 1.5rem;
+  padding-right: 1.5rem;
+  padding-top: 1.5rem;
   gap: 1rem;
 }
 .footer__title {
-  font-size: 3.2rem;
+  font-size: 1.5rem;
   font-weight: 600;
-  padding-bottom: 2rem;
 }
 .footer__logos {
-  padding-top: 0.4rem;
   display: flex;
-  gap: 3.5rem;
+  gap: 1.8rem;
+  padding-bottom: 0.6rem;
 }
 .footer__icons {
-  height: 50px;
+  height: 22px;
 }
 .footer__contact {
   display: flex;
   flex-direction: column;
-  gap: 3rem;
+  gap: 0.5rem;
 }
 .footer__person {
   font-weight: 400;
-  font-size: 1.8rem;
+  font-size: 0.8rem;
 }
 .footer__person-name {
   font-weight: 600;
-  padding-top: 2rem;
-  padding-bottom: 0.4rem;
+  line-height: 0.2rem;
 }
 .footer__person-company {
   font-weight: 600;
-  padding-bottom: 3rem;
 }
 .footer__info-1 {
-  padding-bottom: 0.4rem;
+  padding-top: 0.3rem;
+  line-height: 2rem;
+}
+.footer__info-2 {
+  line-height: 0.2rem;
 }
 .footer__email {
-  padding-top: 2.3rem;
+  line-height: 4rem;
 }
 
 .bandsite__logo {
   display: flex;
-  margin-bottom: 1rem;
-  margin-top: 7rem;
+  width: 100%;
+  padding-top: 1.7rem;
 }
 .bandsite__logo--image {
-  height: 2.5rem;
+  height: 1.2rem;
 }
 
 .copyright {
   font-weight: 400;
-  font-size: 1.5rem;
-  padding-bottom: 2rem;
+  font-size: 0.6rem;
+  line-height: 0.7rem;
+  padding-bottom: 1rem;
 }/*# sourceMappingURL=main.css.map */

@@ -22,15 +22,14 @@ a {
 .nav {
   background-color: $primary-color1;
   width: 100%;
-  padding-top: 2rem;
+  padding-top: 1rem;
   max-width: 100vw;
 
   &__logo-link {
     display: flex;
     justify-content: center;
     width: 100%;
-    height: 2.5rem;
-    margin-bottom: 1rem;
+    height: 1.2rem;
   }
 
   &__logo-image {
@@ -45,27 +44,31 @@ a {
   }
 
   &__list-link {
-    color: $primary-color2;
-    font-size: 1.7rem;
+    color: $secondary-color2;
+    font-size: 0.8rem;
     font-weight: 400;
     width: 100%;
+    height: 100%;
+  }
+
+  &__list-link:hover {
+    color: $primary-color3;
+    width: 50%;
   }
 
   &__list-item {
     width: 50%;
     text-align: center;
-
-    padding-top: 1rem;
-    padding-bottom: 1rem;
   }
 
-  &__list-item--highlight {
-    border-bottom: #fff 0.4rem solid;
+  &__list-item--highlight,
+  &__list-item:hover {
+    border-bottom: #fff 0.2rem solid;
   }
 
   &__list-link--highlight {
-    color: #fff;
-    font-size: 1.7rem;
+    color: $primary-color3;
+    font-size: 0.8rem;
     font-weight: 600;
   }
 }
@@ -76,18 +79,18 @@ a {
   background-size: cover;
   background-blend-mode: darken;
   background-color: rgba($color: #323232, $alpha: 0.4);
-  height: 24.2rem;
+  height: 11.8rem;
   max-width: 100vw;
   display: flex;
   justify-content: flex-start;
   align-items: center;
-  padding-left: 2rem;
-  padding-right: 2rem;
+  padding-left: 1.5rem;
+  padding-right: 1.5rem;
   width: 100%;
 
   &__title {
     color: $primary-color3;
-    font-size: 3rem;
+    font-size: 1.5rem;
     line-height: 32px;
     font-weight: 600;
   }
@@ -96,9 +99,7 @@ a {
 .about {
   display: flex;
   flex-direction: column;
-  padding-top: 3.9rem;
-  padding-left: 2rem;
-  padding-right: 2rem;
+  padding: 1.5rem;
   max-width: 100vw;
   color: $primary-color1;
 
@@ -108,52 +109,46 @@ a {
   }
 
   &__title {
-    font-size: 3.2rem;
+    font-size: 1.5rem;
     font-weight: 600;
-    padding-bottom: 2.5rem;
+    padding-bottom: 0.5rem;
   }
 
   &__image {
     width: 100%;
-    height: 20.9rem;
-    padding-bottom: 0.2rem;
+    height: 9.7rem;
   }
 
   &__quote,
   &__author {
-    font-size: 1.9rem;
-    line-height: 3rem;
+    font-size: 0.9rem;
+    line-height: 1.4rem;
     font-weight: 600;
-    padding-top: 1.5rem;
+    padding-top: 0.9rem;
   }
 
   &__author {
-    padding-top: 0.5rem;
+    padding-top: 0.2rem;
   }
 }
 
 .info {
   &__title {
-    font-size: 2rem;
+    font-size: 0.8rem;
     font-weight: 600;
-    padding-top: 3.2rem;
-    padding-bottom: 1rem;
+    padding-top: 1rem;
   }
 
   &__paragraph-1,
   &__paragraph-2 {
-    font-size: 1.8rem;
+    font-size: 0.8rem;
     font-weight: 400;
-    line-height: 2.5rem;
-    padding-top: 1rem;
+    line-height: 1.2rem;
+    padding-top: 0.4rem;
   }
 
   &__paragraph-1 {
-    padding-bottom: 0.9rem;
-  }
-
-  &__paragraph-2 {
-    padding-bottom: 2rem;
+    padding-bottom: 0.5rem;
   }
 }
 
@@ -163,19 +158,18 @@ a {
   max-width: 100vw;
   color: $primary-color1;
   background-color: $secondary-color3;
-  padding-left: 2rem;
-  padding-right: 2rem;
-  padding-top: 3.5rem;
-  padding-bottom: 1rem;
+  padding-top: 1rem;
+  padding-bottom: 0.5rem;
+  padding-right: 1.5rem;
+  padding-left: 1.5rem;
 
   &__title {
-    font-size: 3.2rem;
+    font-size: 1.5rem;
     font-weight: 600;
-    padding-bottom: 1.9rem;
   }
   &__image {
-    margin: 1rem 0.5rem;
-    height: 22rem;
+    margin-top: 0.5rem;
+    margin-bottom: 0.5rem;
   }
 }
 
@@ -185,69 +179,72 @@ a {
   flex-direction: column;
   background-color: $primary-color1;
   color: $primary-color3;
-  padding-left: 2rem;
-  padding-right: 2rem;
-  padding-top: 4rem;
+  padding-left: 1.5rem;
+  padding-right: 1.5rem;
+  padding-top: 1.5rem;
   gap: 1rem;
 
   &__title {
-    font-size: 3.2rem;
+    font-size: 1.5rem;
     font-weight: 600;
-    padding-bottom: 2rem;
   }
   &__logos {
-    padding-top: 0.4rem;
     display: flex;
-    gap: 3.5rem;
+    gap: 1.8rem;
+    padding-bottom: 0.6rem;
   }
 
   &__icons {
-    height: 50px;
+    height: 22px;
   }
 
   &__contact {
     display: flex;
     flex-direction: column;
-    gap: 3rem;
+    gap: 0.5rem;
   }
 
   &__person {
     font-weight: 400;
-    font-size: 1.8rem;
+    font-size: 0.8rem;
   }
 
   &__person-name {
     font-weight: 600;
-    padding-top: 2rem;
-    padding-bottom: 0.4rem;
+    line-height: 0.2rem;
   }
 
   &__person-company {
     font-weight: 600;
-    padding-bottom: 3rem;
   }
 
   &__info-1 {
-    padding-bottom: 0.4rem;
+    padding-top: 0.3rem;
+    line-height: 2rem;
+  }
+
+  &__info-2 {
+    line-height: 0.2rem;
   }
 
   &__email {
-    padding-top: 2.3rem;
+    line-height: 4rem;
   }
 }
 
 .bandsite__logo {
   display: flex;
-  margin-bottom: 1rem;
-  margin-top: 7rem;
+  width: 100%;
+  padding-top: 1.7rem;
 
   &--image {
-    height: 2.5rem;
+    height: 1.2rem;
   }
 }
 
 .copyright {
   font-weight: 400;
-  font-size: 1.5rem;
-  padding-bottom: 2rem;
+  font-size: 0.6rem;
+  line-height: 0.7rem;
+  padding-bottom: 1rem;
 }
