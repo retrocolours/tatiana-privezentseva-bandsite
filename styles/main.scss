@@ -265,7 +265,7 @@ a {
 
   @include desktop {
     margin-left: 3rem;
-    margin-right: 7.7rem;
+    margin-right: 7rem;
     padding-right: 0;
   }
   &__title {
@@ -288,6 +288,11 @@ a {
       padding-left: 2.5rem;
       padding-right: 2.5rem;
       padding-bottom: 0;
+    }
+
+    @include desktop {
+      margin: 0;
+      justify-content: space-evenly;
     }
   }
 
@@ -339,6 +344,12 @@ a {
     padding-top: 1rem;
   }
 
+  @include desktop {
+    padding-left: 7.9rem;
+    padding-right: 7.9rem;
+    padding-bottom: 0;
+  }
+
   &__container {
     @include tablet {
       flex-direction: row;
@@ -357,6 +368,10 @@ a {
       padding-top: 2rem;
       padding-bottom: 1.5rem;
     }
+    @include desktop {
+      margin-left: 0.5rem;
+      padding-bottom: 2.3rem;
+    }
   }
   &__image {
     margin-top: 0.3rem;
@@ -365,6 +380,9 @@ a {
     @include tablet {
       width: 30%;
       margin: 0.5rem;
+    }
+    @include desktop {
+      width: 31%;
     }
   }
 }
@@ -388,11 +406,17 @@ a {
     flex-wrap: wrap;
   }
 
+  @include desktop {
+    padding-left: 7.9rem;
+    padding-right: 7.9rem;
+  }
+
   &__container {
     @include tablet {
       display: flex;
       flex-direction: row;
       align-items: baseline;
+      justify-content: space-between;
       gap: 1rem;
     }
   }
@@ -403,6 +427,10 @@ a {
       display: flex;
       justify-self: flex-end;
       margin-left: 14rem;
+    }
+
+    @include desktop {
+      margin-left: 34rem;
     }
   }
 
@@ -505,5 +533,12 @@ a {
 
   @include tablet {
     font-size: 0.9rem;
+  }
+
+  @include desktop {
+    display: flex;
+    align-items: flex-end;
+    margin-right: 30rem;
+    padding-bottom: 1.2rem;
   }
 }
