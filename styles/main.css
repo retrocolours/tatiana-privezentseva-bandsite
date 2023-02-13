@@ -59,6 +59,7 @@ a {
 @media screen and (min-width: 768px) {
   .nav__logo-link {
     width: 30%;
+    margin-bottom: 1rem;
   }
 }
 .nav__logo-image {
@@ -199,7 +200,7 @@ a {
   font-size: 0.9rem;
   line-height: 1.4rem;
   font-weight: 600;
-  padding-top: 0.9rem;
+  padding-top: 0.4rem;
 }
 @media screen and (min-width: 768px) {
   .about__quote, .about__author {
@@ -220,21 +221,31 @@ a {
   }
 }
 
+@media screen and (min-width: 768px) {
+  .info {
+    padding-bottom: 0;
+  }
+}
 .info__title {
   font-size: 0.8rem;
   font-weight: 600;
-  padding-top: 1rem;
+  padding-top: 0.5rem;
 }
 @media screen and (min-width: 768px) {
   .info__title {
     font-size: 1.5rem;
     padding-bottom: 1rem;
+    padding-left: 2.5rem;
+    padding-right: 2.5rem;
   }
 }
 @media screen and (min-width: 768px) {
   .info__story {
     display: flex;
     flex-direction: row;
+    padding-left: 2.5rem;
+    padding-right: 2.5rem;
+    padding-bottom: 0;
   }
 }
 .info__paragraph-1, .info__paragraph-2 {
@@ -250,7 +261,17 @@ a {
   }
 }
 .info__paragraph-1 {
-  padding-bottom: 0.5rem;
+  padding-bottom: 0.4rem;
+}
+@media screen and (min-width: 768px) {
+  .info__paragraph-1 {
+    padding-bottom: 0;
+  }
+}
+@media screen and (min-width: 768px) {
+  .info__paragraph-2 {
+    padding-left: 1rem;
+  }
 }
 
 .gallery {
@@ -264,13 +285,41 @@ a {
   padding-right: 1.5rem;
   padding-left: 1.5rem;
 }
+@media screen and (min-width: 768px) {
+  .gallery {
+    padding-left: 2.5rem;
+    padding-top: 1rem;
+  }
+}
+@media screen and (min-width: 768px) {
+  .gallery__container {
+    flex-direction: row;
+    flex-wrap: wrap;
+    margin-bottom: 1.5rem;
+  }
+}
 .gallery__title {
   font-size: 1.5rem;
   font-weight: 600;
+  padding-bottom: 0.5rem;
+}
+@media screen and (min-width: 768px) {
+  .gallery__title {
+    font-size: 2.2rem;
+    padding-top: 2rem;
+    padding-bottom: 1.5rem;
+  }
 }
 .gallery__image {
-  margin-top: 0.5rem;
-  margin-bottom: 0.5rem;
+  margin-top: 0.3rem;
+  margin-bottom: 0.3rem;
+  width: 100%;
+}
+@media screen and (min-width: 768px) {
+  .gallery__image {
+    width: 30%;
+    margin: 0.5rem;
+  }
 }
 
 .footer {
@@ -284,9 +333,42 @@ a {
   padding-top: 1.5rem;
   gap: 1rem;
 }
+@media screen and (min-width: 768px) {
+  .footer {
+    padding-left: 2.5rem;
+    padding-right: 2.5rem;
+    padding-top: 3rem;
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+}
+@media screen and (min-width: 768px) {
+  .footer__container {
+    display: flex;
+    flex-direction: row;
+    align-items: baseline;
+    gap: 1rem;
+  }
+}
+.footer__logo {
+  display: none;
+}
+@media screen and (min-width: 768px) {
+  .footer__logo {
+    display: flex;
+    justify-self: flex-end;
+    margin-left: 14rem;
+  }
+}
 .footer__title {
   font-size: 1.5rem;
   font-weight: 600;
+  padding-bottom: 1rem;
+}
+@media screen and (min-width: 768px) {
+  .footer__title {
+    font-size: 2.1rem;
+  }
 }
 .footer__logos {
   display: flex;
@@ -301,32 +383,74 @@ a {
   flex-direction: column;
   gap: 0.5rem;
 }
+@media screen and (min-width: 768px) {
+  .footer__contact {
+    flex-direction: row;
+    gap: 1.3rem;
+    padding-top: 1.5rem;
+  }
+}
 .footer__person {
   font-weight: 400;
   font-size: 0.8rem;
+}
+@media screen and (min-width: 768px) {
+  .footer__person {
+    font-size: 0.9rem;
+  }
 }
 .footer__person-name {
   font-weight: 600;
   line-height: 0.2rem;
 }
+@media screen and (min-width: 768px) {
+  .footer__person-name {
+    line-height: 0.4rem;
+  }
+}
 .footer__person-company {
   font-weight: 600;
+}
+@media screen and (min-width: 768px) {
+  .footer__person-company {
+    padding-bottom: 0.5rem;
+  }
 }
 .footer__info-1 {
   padding-top: 0.3rem;
   line-height: 2rem;
 }
+@media screen and (min-width: 768px) {
+  .footer__info-1 {
+    line-height: 2.2rem;
+  }
+}
 .footer__info-2 {
   line-height: 0.2rem;
 }
+@media screen and (min-width: 768px) {
+  .footer__info-2 {
+    padding-bottom: 0.5rem;
+  }
+}
 .footer__email {
   line-height: 4rem;
+}
+@media screen and (min-width: 768px) {
+  .footer__email {
+    padding-bottom: 1rem;
+  }
 }
 
 .bandsite__logo {
   display: flex;
   width: 100%;
   padding-top: 1.7rem;
+}
+@media screen and (min-width: 768px) {
+  .bandsite__logo {
+    display: none;
+  }
 }
 .bandsite__logo--image {
   height: 1.2rem;
@@ -337,4 +461,9 @@ a {
   font-size: 0.6rem;
   line-height: 0.7rem;
   padding-bottom: 1rem;
+}
+@media screen and (min-width: 768px) {
+  .copyright {
+    font-size: 0.9rem;
+  }
 }/*# sourceMappingURL=main.css.map */

@@ -41,6 +41,7 @@ a {
 
     @include tablet {
       width: 30%;
+      margin-bottom: 1rem;
     }
   }
 
@@ -186,7 +187,7 @@ a {
     font-size: 0.9rem;
     line-height: 1.4rem;
     font-weight: 600;
-    padding-top: 0.9rem;
+    padding-top: 0.4rem;
 
     @include tablet {
       margin-left: 4.2rem;
@@ -208,14 +209,19 @@ a {
 }
 
 .info {
+  @include tablet {
+    padding-bottom: 0;
+  }
   &__title {
     font-size: 0.8rem;
     font-weight: 600;
-    padding-top: 1rem;
+    padding-top: 0.5rem;
 
     @include tablet {
       font-size: 1.5rem;
       padding-bottom: 1rem;
+      padding-left: 2.5rem;
+      padding-right: 2.5rem;
     }
   }
 
@@ -223,6 +229,9 @@ a {
     @include tablet {
       display: flex;
       flex-direction: row;
+      padding-left: 2.5rem;
+      padding-right: 2.5rem;
+      padding-bottom: 0;
     }
   }
 
@@ -240,7 +249,16 @@ a {
   }
 
   &__paragraph-1 {
-    padding-bottom: 0.5rem;
+    padding-bottom: 0.4rem;
+    @include tablet {
+      padding-bottom: 0;
+    }
+  }
+
+  &__paragraph-2 {
+    @include tablet {
+      padding-left: 1rem;
+    }
   }
 }
 
@@ -255,13 +273,38 @@ a {
   padding-right: 1.5rem;
   padding-left: 1.5rem;
 
+  @include tablet {
+    padding-left: 2.5rem;
+    padding-top: 1rem;
+  }
+
+  &__container {
+    @include tablet {
+      flex-direction: row;
+      flex-wrap: wrap;
+      margin-bottom: 1.5rem;
+    }
+  }
+
   &__title {
     font-size: 1.5rem;
     font-weight: 600;
+    padding-bottom: 0.5rem;
+
+    @include tablet {
+      font-size: 2.2rem;
+      padding-top: 2rem;
+      padding-bottom: 1.5rem;
+    }
   }
   &__image {
-    margin-top: 0.5rem;
-    margin-bottom: 0.5rem;
+    margin-top: 0.3rem;
+    margin-bottom: 0.3rem;
+    width: 100%;
+    @include tablet {
+      width: 30%;
+      margin: 0.5rem;
+    }
   }
 }
 
@@ -276,10 +319,41 @@ a {
   padding-top: 1.5rem;
   gap: 1rem;
 
+  @include tablet {
+    padding-left: 2.5rem;
+    padding-right: 2.5rem;
+    padding-top: 3rem;
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+
+  &__container {
+    @include tablet {
+      display: flex;
+      flex-direction: row;
+      align-items: baseline;
+      gap: 1rem;
+    }
+  }
+
+  &__logo {
+    display: none;
+    @include tablet {
+      display: flex;
+      justify-self: flex-end;
+      margin-left: 14rem;
+    }
+  }
+
   &__title {
     font-size: 1.5rem;
     font-weight: 600;
+    padding-bottom: 1rem;
+    @include tablet {
+      font-size: 2.1rem;
+    }
   }
+
   &__logos {
     display: flex;
     gap: 1.8rem;
@@ -294,33 +368,57 @@ a {
     display: flex;
     flex-direction: column;
     gap: 0.5rem;
+
+    @include tablet {
+      flex-direction: row;
+      gap: 1.3rem;
+      padding-top: 1.5rem;
+    }
   }
 
   &__person {
     font-weight: 400;
     font-size: 0.8rem;
+    @include tablet {
+      font-size: 0.9rem;
+    }
   }
 
   &__person-name {
     font-weight: 600;
     line-height: 0.2rem;
+    @include tablet {
+      line-height: 0.4rem;
+    }
   }
 
   &__person-company {
     font-weight: 600;
+    @include tablet {
+      padding-bottom: 0.5rem;
+    }
   }
 
   &__info-1 {
     padding-top: 0.3rem;
     line-height: 2rem;
+    @include tablet {
+      line-height: 2.2rem;
+    }
   }
 
   &__info-2 {
     line-height: 0.2rem;
+    @include tablet {
+      padding-bottom: 0.5rem;
+    }
   }
 
   &__email {
     line-height: 4rem;
+    @include tablet {
+      padding-bottom: 1rem;
+    }
   }
 }
 
@@ -328,6 +426,10 @@ a {
   display: flex;
   width: 100%;
   padding-top: 1.7rem;
+
+  @include tablet {
+    display: none;
+  }
 
   &--image {
     height: 1.2rem;
@@ -339,4 +441,8 @@ a {
   font-size: 0.6rem;
   line-height: 0.7rem;
   padding-bottom: 1rem;
+
+  @include tablet {
+    font-size: 0.9rem;
+  }
 }
