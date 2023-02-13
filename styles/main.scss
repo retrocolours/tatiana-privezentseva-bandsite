@@ -3,17 +3,12 @@
 @use "./partials/fonts" as *;
 
 * {
-  box-sizing: border-box;
-  margin: 0;
-  padding: 0;
-  font-family: AvenirNext LT Pro;
-  // border: 1px solid red;
+  @include box-sizing;
+  @include typography;
 }
 
 body {
-  font-size: 24px;
-  line-height: 32px;
-  font-weight: 700;
+  @include body;
 }
 
 a {
@@ -127,19 +122,7 @@ a {
 }
 
 .hero {
-  background-image: url(../assets/Images/hero-bio.jpg);
-  background-position: center;
-  background-size: cover;
-  background-blend-mode: darken;
-  background-color: rgba($color: #323232, $alpha: 0.4);
-  height: 11.8rem;
-  max-width: 100vw;
-  display: flex;
-  justify-content: flex-start;
-  align-items: center;
-  padding-left: 1.5rem;
-  padding-right: 1.5rem;
-  width: 100%;
+  @include hero;
 
   @include tablet {
     height: 28.1rem;
@@ -329,15 +312,7 @@ a {
 }
 
 .gallery {
-  display: flex;
-  flex-direction: column;
-  max-width: 100vw;
-  color: $primary-color1;
-  background-color: $secondary-color3;
-  padding-top: 1rem;
-  padding-bottom: 0.5rem;
-  padding-right: 1.5rem;
-  padding-left: 1.5rem;
+  @include gallery;
 
   @include tablet {
     padding-left: 2.5rem;
@@ -377,6 +352,9 @@ a {
     margin-top: 0.3rem;
     margin-bottom: 0.3rem;
     width: 100%;
+    filter: grayscale(100%);
+    transition: filter 0.3s ease-in-out;
+
     @include tablet {
       width: 30%;
       margin: 0.5rem;
@@ -384,19 +362,15 @@ a {
     @include desktop {
       width: 31%;
     }
+
+    &:hover {
+      filter: grayscale(0%);
+    }
   }
 }
 
 .footer {
-  max-width: 100vw;
-  display: flex;
-  flex-direction: column;
-  background-color: $primary-color1;
-  color: $primary-color3;
-  padding-left: 1.5rem;
-  padding-right: 1.5rem;
-  padding-top: 1.5rem;
-  gap: 1rem;
+  @include footer;
 
   @include tablet {
     padding-left: 2.5rem;
@@ -504,6 +478,7 @@ a {
   }
 
   &__email {
+    color: $primary-color3;
     line-height: 4rem;
     @include tablet {
       padding-bottom: 1rem;
