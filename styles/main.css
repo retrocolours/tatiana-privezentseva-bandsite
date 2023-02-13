@@ -50,6 +50,12 @@ a {
     padding-top: 0.8rem;
   }
 }
+@media screen and (min-width: 1280px) {
+  .nav {
+    padding-left: 7.9rem;
+    padding-top: 1.4rem;
+  }
+}
 .nav__logo-link {
   display: flex;
   justify-content: center;
@@ -60,6 +66,12 @@ a {
   .nav__logo-link {
     width: 30%;
     margin-bottom: 1rem;
+  }
+}
+@media screen and (min-width: 1280px) {
+  .nav__logo-link {
+    width: 10%;
+    margin-bottom: 1.5rem;
   }
 }
 .nav__logo-image {
@@ -74,6 +86,12 @@ a {
 @media screen and (min-width: 768px) {
   .nav__list {
     width: 30%;
+  }
+}
+@media screen and (min-width: 1280px) {
+  .nav__list {
+    justify-content: center;
+    width: 23%;
   }
 }
 .nav__list-link {
@@ -102,6 +120,11 @@ a {
     width: 30%;
   }
 }
+@media screen and (min-width: 1280px) {
+  .nav__list-item {
+    padding-bottom: 1.5rem;
+  }
+}
 .nav__list-item--highlight, .nav__list-item:hover {
   border-bottom: #fff 0.2rem solid;
 }
@@ -113,6 +136,11 @@ a {
 @media screen and (min-width: 768px) {
   .nav__list-link--highlight {
     font-size: 0.9rem;
+  }
+}
+@media screen and (min-width: 1280px) {
+  .nav__list-link--highlight {
+    padding-right: 1rem;
   }
 }
 
@@ -135,6 +163,12 @@ a {
   .hero {
     height: 28.1rem;
     padding-left: 2.5rem;
+  }
+}
+@media screen and (min-width: 1280px) {
+  .hero {
+    height: 39.5rem;
+    padding-left: 7.9rem;
   }
 }
 .hero__title {
@@ -160,6 +194,12 @@ a {
   .about {
     padding: 2.5rem;
     gap: 2rem;
+  }
+}
+@media screen and (min-width: 1280px) {
+  .about {
+    padding-left: 7.9rem;
+    padding-right: 7.9rem;
   }
 }
 .about__box {
@@ -188,6 +228,13 @@ a {
        object-fit: cover;
   }
 }
+@media screen and (min-width: 1280px) {
+  .about__image {
+    height: 28.2rem;
+    width: 75%;
+    margin-right: 5.5rem;
+  }
+}
 @media screen and (min-width: 768px) {
   .about__container {
     display: flex;
@@ -210,6 +257,14 @@ a {
     line-height: 2rem;
   }
 }
+@media screen and (min-width: 1280px) {
+  .about__quote, .about__author {
+    margin-left: 5.2rem;
+    margin-right: 20.5rem;
+    padding-top: 1.2rem;
+    line-height: 1.8rem;
+  }
+}
 .about__author {
   padding-top: 0.2rem;
 }
@@ -220,10 +275,22 @@ a {
     line-height: 0.3rem;
   }
 }
+@media screen and (min-width: 1280px) {
+  .about__author {
+    padding-top: 0.5rem;
+  }
+}
 
 @media screen and (min-width: 768px) {
   .info {
     padding-bottom: 0;
+  }
+}
+@media screen and (min-width: 1280px) {
+  .info {
+    margin-left: 3rem;
+    margin-right: 7.7rem;
+    padding-right: 0;
   }
 }
 .info__title {
@@ -258,6 +325,12 @@ a {
   .info__paragraph-1, .info__paragraph-2 {
     font-size: 0.9rem;
     line-height: 1.5rem;
+  }
+}
+@media screen and (min-width: 1280px) {
+  .info__paragraph-1, .info__paragraph-2 {
+    line-height: 1.4rem;
+    font-size: 0.9rem;
   }
 }
 .info__paragraph-1 {
