@@ -10,7 +10,7 @@
   <body>
     <header>
       <nav class="nav">
-        <a class="nav__logo-link" href="./index.html">
+        <a class="nav__logo-link" href="../index.html">
           <img
             class="nav__logo-image"
             src="../assets/Logo/Logo-bandsite.svg"
@@ -34,6 +34,7 @@
     <main>
       <section class="hero">
         <h1 class="hero__album">Beatiful Beasts Album</h1>
+        <div class="hero__box">
         <h2 class="hero__song">Queen of Yellow x For The Strings</h2>
         <iframe
           class="hero__player"
@@ -44,91 +45,33 @@
           allow="autoplay"
           src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/252361248&color=%236c848c&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true"
         ></iframe>
+        </div>
       </section>
 
       <section class="schedule">
         <h2 class="schedule__title">Shows</h2>
-        <ul id="schedule__list" class="schedule__list">
-          <li class="schedule__item">
-            <div class="schedule__info">
-              <p class="schedule__main">Date</p>
-              <p class="schedule__secondary schedule__secondary--bold">
-                Mon Sept 06 2021
-              </p>
-              <p class="schedule__main">Venue</p>
-              <p class="schedule__secondary">Ronald Lane</p>
-              <p class="schedule__main">Location</p>
-              <p class="schedule__secondary">San Francisco, CA</p>
-            </div>
-            <button class="schedule__btn">Buy Tickets</button>
-          </li>
-          <li class="schedule__item">
-            <div class="schedule__info">
-              <p class="schedule__main">Date</p>
-              <p class="schedule__secondary schedule__secondary--bold">
-                Tue Sept 21 2021
-              </p>
-              <p class="schedule__main">Venue</p>
-              <p class="schedule__secondary">Pier 3 East</p>
-              <p class="schedule__main">Location</p>
-              <p class="schedule__secondary">San Francisco, CA</p>
-            </div>
-            <button class="schedule__btn">Buy Tickets</button>
-          </li>
-          <li class="schedule__item">
-            <div class="schedule__info">
-              <p class="schedule__main">Date</p>
-              <p class="schedule__secondary schedule__secondary--bold">
-                Fri Oct 15 2021
-              </p>
-              <p class="schedule__main">Venue</p>
-              <p class="schedule__secondary">View Lounge</p>
-              <p class="schedule__main">Location</p>
-              <p class="schedule__secondary">San Francisco, CA</p>
-            </div>
-            <button class="schedule__btn">Buy Tickets</button>
-          </li>
-          <li class="schedule__item">
-            <div class="schedule__info">
-              <p class="schedule__main">Date</p>
-              <p class="schedule__secondary schedule__secondary--bold">
-                Sat Nov 06 2021
-              </p>
-              <p class="schedule__main">Venue</p>
-              <p class="schedule__secondary">Hyatt Agency</p>
-              <p class="schedule__main">Location</p>
-              <p class="schedule__secondary">San Francisco, CA</p>
-            </div>
-            <button class="schedule__btn">Buy Tickets</button>
-          </li>
-          <li class="schedule__item">
-            <div class="schedule__info">
-              <p class="schedule__main">Date</p>
-
-              <p class="schedule__secondary schedule__secondary--bold">
-                Fri Nov 26 2021
-              </p>
-              <p class="schedule__main">Venue</p>
-              <p class="schedule__secondary">Moscow Center</p>
-              <p class="schedule__main">Location</p>
-              <p class="schedule__secondary">San Francisco, CA</p>
-            </div>
-            <button class="schedule__btn">Buy Tickets</button>
-          </li>
-          <li class="schedule__item">
-            <div class="schedule__info">
-              <p class="schedule__main">Date</p>
-              <p class="schedule__secondary schedule__secondary--bold">
-                Wed Dec 15 2021
-              </p>
-              <p class="schedule__main">Venue</p>
-              <p class="schedule__secondary">Press Club</p>
-              <p class="schedule__main">Location</p>
-              <p class="schedule__secondary">San Francisco, CA</p>
-            </div>
-            <button class="schedule__btn">Buy Tickets</button>
-          </li>
-        </ul>
+        <div class="schedule__container"> 
+          <div class="schedule__container--tablet">
+          <p class="schedule__main--tablet">Date</p>
+          <p class="schedule__main--tablet">Venue</p>
+          <p class="schedule__main--tablet">Location</p>
+          <p class="schedule__main--tablet"></p>
+          </div>
+          <ul id="schedule__list" class="schedule__list">
+            <li class="schedule__item">
+              <div class="schedule__info">
+                <p class="schedule__main">Date</p>
+                <p class="schedule__secondary schedule__secondary--bold">
+                  Mon Sept 06 2021
+                </p>
+                <p class="schedule__main">Venue</p>
+                <p class="schedule__secondary">Ronald Lane</p>
+                <p class="schedule__main">Location</p>
+                <p class="schedule__secondary">San Francisco, CA</p>
+              <button class="schedule__btn">Buy Tickets</button>
+              </div>
+            </li>
+            </ul>
       </section>
     </main>
 

@@ -123,10 +123,26 @@ a {
 @media screen and (min-width: 1280px) {
   .nav__list-item {
     padding-bottom: 1.5rem;
+    width: 50%;
   }
 }
 .nav__list-item--highlight, .nav__list-item:hover {
   border-bottom: #fff 0.2rem solid;
+  width: 50%;
+}
+@media screen and (min-width: 768px) {
+  .nav__list-item--highlight, .nav__list-item:hover {
+    width: -webkit-fit-content;
+    width: -moz-fit-content;
+    width: fit-content;
+  }
+}
+@media screen and (min-width: 1280px) {
+  .nav__list-item--highlight, .nav__list-item:hover {
+    width: -webkit-fit-content;
+    width: -moz-fit-content;
+    width: fit-content;
+  }
 }
 .nav__list-link--highlight {
   color: #ffffff;
@@ -156,10 +172,38 @@ a {
   padding-right: 1rem;
   gap: 0.9rem;
 }
+@media screen and (min-width: 768px) {
+  .hero {
+    height: 30.6rem;
+    padding-left: 2rem;
+    padding-right: 2rem;
+  }
+}
+@media screen and (min-width: 1280px) {
+  .hero {
+    padding-left: 7rem;
+    height: 39.4rem;
+  }
+}
 .hero__album {
   font-size: 0.9rem;
   font-weight: 400;
   color: #ffffff;
+}
+@media screen and (min-width: 768px) {
+  .hero__album {
+    font-size: 1.5rem;
+    font-weight: 600;
+  }
+}
+.hero__box {
+  display: flex;
+  flex-direction: column;
+}
+@media screen and (min-width: 1280px) {
+  .hero__box {
+    flex-direction: row;
+  }
 }
 .hero__song {
   font-size: 1.5rem;
@@ -167,17 +211,44 @@ a {
   color: #ffffff;
   width: 75%;
 }
+@media screen and (min-width: 768px) {
+  .hero__song {
+    font-size: 3.7rem;
+    line-height: 3.9rem;
+  }
+}
+@media screen and (min-width: 1280px) {
+  .hero__song {
+    width: 40%;
+  }
+}
 .hero__player {
   width: 99%;
   height: 7rem;
-  max-width: 600px;
+}
+@media screen and (min-width: 768px) {
+  .hero__player {
+    margin-top: 1.5rem;
+    width: 59%;
+    height: 8.5rem;
+  }
+}
+@media screen and (min-width: 1280px) {
+  .hero__player {
+    width: 30%;
+  }
 }
 
 .schedule {
   margin-top: 2rem;
-  display: flex;
-  flex-direction: column;
   padding-bottom: 1rem;
+}
+@media screen and (min-width: 768px) {
+  .schedule {
+    margin-bottom: 1rem;
+    padding-left: 1rem;
+    padding-right: 1rem;
+  }
 }
 .schedule__title {
   font-size: 1.5rem;
@@ -187,6 +258,13 @@ a {
   padding-bottom: 1rem;
   padding-top: 1rem;
   line-height: 0.8rem;
+}
+@media screen and (min-width: 768px) {
+  .schedule__title {
+    font-size: 2.2rem;
+    padding-bottom: 3rem;
+    padding-top: 2rem;
+  }
 }
 .schedule__main {
   color: #afafaf;
@@ -198,18 +276,52 @@ a {
   line-height: 1rem;
   padding-top: 0.5rem;
 }
-.schedule__secondary--bold {
+@media screen and (min-width: 768px) {
+  .schedule__main {
+    display: none;
+  }
+}
+.schedule__container--tablet {
+  display: none;
+}
+@media screen and (min-width: 768px) {
+  .schedule__container--tablet {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding-left: 1rem;
+  }
+}
+.schedule__main--tablet {
+  color: #afafaf;
   font-size: 0.8rem;
-  font-weight: 700;
+  font-weight: 600;
+  text-transform: uppercase;
+  margin: 0;
+  padding: 0;
+  line-height: 1rem;
+  padding-top: 0.5rem;
+  width: 23%;
 }
 .schedule__secondary {
   font-size: 0.8rem;
   font-weight: 400;
   line-height: 1.7rem;
+  width: 160px;
+}
+@media screen and (min-width: 768px) {
+  .schedule__secondary {
+    font-size: 0.9rem;
+  }
 }
 .schedule__secondary--bold {
   font-size: 0.8rem;
   font-weight: 600;
+}
+@media screen and (min-width: 768px) {
+  .schedule__secondary--bold {
+    font-size: 0.9rem;
+  }
 }
 .schedule__item {
   border-bottom: 1px solid #e1e1e1;
@@ -217,9 +329,25 @@ a {
   padding-left: 1rem;
   padding-right: 1rem;
 }
+@media screen and (min-width: 768px) {
+  .schedule__item {
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+  }
+}
 .schedule__info {
   display: flex;
   flex-direction: column;
+}
+@media screen and (min-width: 768px) {
+  .schedule__info {
+    flex-direction: row;
+    align-items: baseline;
+    gap: 5%;
+    justify-content: space-between;
+    width: 100%;
+  }
 }
 .schedule__btn {
   background-color: #323232;
@@ -234,6 +362,12 @@ a {
   border-radius: 5px;
   margin-bottom: 1rem;
   margin-top: 1rem;
+}
+@media screen and (min-width: 768px) {
+  .schedule__btn {
+    width: 23%;
+    display: inline-block;
+  }
 }
 
 .footer {
