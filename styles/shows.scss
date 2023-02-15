@@ -148,8 +148,8 @@ a {
   }
 
   &__player {
-    width: 100%;
-    height: 5.2rem;
+    width: 99%;
+    height: 7rem;
     max-width: 600px;
   }
 }
@@ -158,21 +158,68 @@ a {
   margin-top: 2rem;
   display: flex;
   flex-direction: column;
+  padding-bottom: 1rem;
   &__title {
     font-size: 1.5rem;
     font-weight: 600;
+    padding-left: 1rem;
+    padding-right: 1rem;
+    padding-bottom: 1rem;
+    padding-top: 1rem;
+    line-height: 0.8rem;
   }
-  &__date,
-  &__venue,
-  &__location {
+  &__main {
     color: $primary-color2;
     font-size: 0.6rem;
     font-weight: 600;
     text-transform: uppercase;
+    margin: 0;
+    padding: 0;
+    line-height: 1rem;
+    padding-top: 0.5rem;
   }
 
-  &__day {
-    font-size: 0.6rem;
+  &__secondary--bold {
+    font-size: 0.8rem;
+    font-weight: 700;
+  }
+
+  &__secondary {
+    font-size: 0.8rem;
+    font-weight: 400;
+    line-height: 1.7rem;
+  }
+
+  &__secondary--bold {
+    font-size: 0.8rem;
+    font-weight: 600;
+  }
+
+  &__item {
+    border-bottom: 1px solid $secondary-color2;
+    list-style: none;
+    padding-left: 1rem;
+    padding-right: 1rem;
+  }
+
+  &__info {
+    display: flex;
+    flex-direction: column;
+  }
+
+  &__btn {
+    background-color: $primary-color1;
+    color: $primary-color3;
+    width: 98%;
+    height: 2.5rem;
+    font-size: 0.8rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    text-align: center;
+    border-style: none;
+    border-radius: 5px;
+    margin-bottom: 1rem;
+    margin-top: 1rem;
   }
 }
 

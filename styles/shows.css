@@ -168,8 +168,8 @@ a {
   width: 75%;
 }
 .hero__player {
-  width: 100%;
-  height: 5.2rem;
+  width: 99%;
+  height: 7rem;
   max-width: 600px;
 }
 
@@ -177,19 +177,63 @@ a {
   margin-top: 2rem;
   display: flex;
   flex-direction: column;
+  padding-bottom: 1rem;
 }
 .schedule__title {
   font-size: 1.5rem;
   font-weight: 600;
+  padding-left: 1rem;
+  padding-right: 1rem;
+  padding-bottom: 1rem;
+  padding-top: 1rem;
+  line-height: 0.8rem;
 }
-.schedule__date, .schedule__venue, .schedule__location {
+.schedule__main {
   color: #afafaf;
   font-size: 0.6rem;
   font-weight: 600;
   text-transform: uppercase;
+  margin: 0;
+  padding: 0;
+  line-height: 1rem;
+  padding-top: 0.5rem;
 }
-.schedule__day {
-  font-size: 0.6rem;
+.schedule__secondary--bold {
+  font-size: 0.8rem;
+  font-weight: 700;
+}
+.schedule__secondary {
+  font-size: 0.8rem;
+  font-weight: 400;
+  line-height: 1.7rem;
+}
+.schedule__secondary--bold {
+  font-size: 0.8rem;
+  font-weight: 600;
+}
+.schedule__item {
+  border-bottom: 1px solid #e1e1e1;
+  list-style: none;
+  padding-left: 1rem;
+  padding-right: 1rem;
+}
+.schedule__info {
+  display: flex;
+  flex-direction: column;
+}
+.schedule__btn {
+  background-color: #323232;
+  color: #ffffff;
+  width: 98%;
+  height: 2.5rem;
+  font-size: 0.8rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  text-align: center;
+  border-style: none;
+  border-radius: 5px;
+  margin-bottom: 1rem;
+  margin-top: 1rem;
 }
 
 .footer {
