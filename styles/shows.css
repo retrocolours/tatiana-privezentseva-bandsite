@@ -200,9 +200,16 @@ a {
   display: flex;
   flex-direction: column;
 }
+@media screen and (min-width: 768px) {
+  .hero__box {
+    gap: 1rem;
+  }
+}
 @media screen and (min-width: 1280px) {
   .hero__box {
     flex-direction: row;
+    align-items: center;
+    gap: 10rem;
   }
 }
 .hero__song {
@@ -228,14 +235,14 @@ a {
 }
 @media screen and (min-width: 768px) {
   .hero__player {
-    margin-top: 1.5rem;
+    margin-top: 2rem;
     width: 59%;
     height: 8.5rem;
   }
 }
 @media screen and (min-width: 1280px) {
   .hero__player {
-    width: 30%;
+    width: 35%;
   }
 }
 
@@ -248,6 +255,11 @@ a {
     margin-bottom: 1rem;
     padding-left: 1rem;
     padding-right: 1rem;
+  }
+}
+@media screen and (min-width: 1280px) {
+  .schedule {
+    display: flex;
   }
 }
 .schedule__title {
@@ -264,6 +276,16 @@ a {
     font-size: 2.2rem;
     padding-bottom: 3rem;
     padding-top: 2rem;
+  }
+}
+@media screen and (min-width: 1280px) {
+  .schedule__title {
+    flex: 1;
+  }
+}
+@media screen and (min-width: 1280px) {
+  .schedule__container {
+    flex: 3;
   }
 }
 .schedule__main {
@@ -366,8 +388,11 @@ a {
 @media screen and (min-width: 768px) {
   .schedule__btn {
     width: 23%;
-    display: inline-block;
   }
+}
+
+.dummy {
+  width: 24%;
 }
 
 .footer {

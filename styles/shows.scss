@@ -169,8 +169,14 @@ a {
     display: flex;
     flex-direction: column;
 
+    @include tablet {
+      gap: 1rem;
+    }
+
     @include desktop {
       flex-direction: row;
+      align-items: center;
+      gap: 10rem;
     }
   }
 
@@ -193,16 +199,15 @@ a {
   &__player {
     width: 99%;
     height: 7rem;
-    // max-width: 600px;
 
     @include tablet {
-      margin-top: 1.5rem;
+      margin-top: 2rem;
       width: 59%;
       height: 8.5rem;
     }
 
     @include desktop {
-      width: 30%;
+      width: 35%;
     }
   }
 }
@@ -215,6 +220,10 @@ a {
     margin-bottom: 1rem;
     padding-left: 1rem;
     padding-right: 1rem;
+  }
+
+  @include desktop {
+    display: flex;
   }
 
   &__title {
@@ -230,6 +239,16 @@ a {
       font-size: 2.2rem;
       padding-bottom: 3rem;
       padding-top: 2rem;
+    }
+
+    @include desktop {
+      flex: 1;
+    }
+  }
+
+  &__container {
+    @include desktop {
+      flex: 3;
     }
   }
 
@@ -254,7 +273,6 @@ a {
       display: flex;
       flex-direction: row;
       justify-content: space-between;
-
       padding-left: 1rem;
     }
   }
@@ -330,9 +348,12 @@ a {
     margin-top: 1rem;
     @include tablet {
       width: 23%;
-      display: inline-block;
     }
   }
+}
+
+.dummy {
+  width: 24%;
 }
 
 .footer {
