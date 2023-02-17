@@ -358,6 +358,9 @@ a {
     align-items: baseline;
   }
 }
+.schedule__item:hover {
+  background-color: #fafafa;
+}
 .schedule__info {
   display: flex;
   flex-direction: column;
@@ -389,6 +392,13 @@ a {
   .schedule__btn {
     width: 23%;
   }
+}
+
+.selected {
+  background-color: #e1e1e1;
+}
+.selected:hover {
+  background-color: #e1e1e1;
 }
 
 .dummy {

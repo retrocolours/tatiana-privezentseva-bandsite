@@ -243,7 +243,6 @@ a {
 
     @include desktop {
       flex: 1;
-    
     }
   }
 
@@ -320,6 +319,10 @@ a {
       justify-content: space-between;
       align-items: baseline;
     }
+
+    &:hover {
+      background-color: $secondary-color3;
+    }
   }
 
   &__info {
@@ -353,6 +356,13 @@ a {
   }
 }
 
+.selected {
+  background-color: $secondary-color2;
+  &:hover {
+    background-color: $secondary-color2;
+
+  }
+}
 .dummy {
   width: 24%;
 }

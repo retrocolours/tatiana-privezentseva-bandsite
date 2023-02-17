@@ -104,3 +104,18 @@ for (let i = 0; i < showData.length; i++) {
   showItem.appendChild(showBox);
   showList.appendChild(showItem);
 }
+
+const paragraphs = document.querySelectorAll('.schedule__item');
+
+function paragraphClick(event) {
+
+  paragraphs.forEach(paragraphs => {
+    paragraphs.classList.remove('selected');
+  });
+  
+  event.currentTarget.classList.add('selected');
+}
+
+paragraphs.forEach(paragraphs => {
+  paragraphs.addEventListener('click', paragraphClick);
+});
