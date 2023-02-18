@@ -24,9 +24,9 @@ const opinionsData = [
   },
 ];
 
-function createComment(comment) {
-  const opinionsList = document.getElementById("opinions__list");
+const opinionsList = document.getElementById("opinions__list");
 
+function createComment(comment) {
   const opinionsItem = document.createElement("li");
   opinionsItem.classList.add("opinions__item");
 
@@ -36,8 +36,14 @@ function createComment(comment) {
   const opinionsBox2 = document.createElement("div");
   opinionsBox2.classList.add("opinions__avatar");
 
-  const opinionsImage = document.createElement("img");
-  opinionsImage.classList.add("opinions__image");
+  let opinionsImage = "";
+  if (comment.picture === undefined) {
+    opinionsImage = document.createElement("div");
+    opinionsImage.classList.add("opinions__image--indefined");
+  } else {
+    opinionsImage = document.createElement("img");
+    opinionsImage.classList.add("opinions__image");
+  }
 
   const opinionsBox3 = document.createElement("div");
   opinionsBox3.classList.add("opinions__info");
@@ -67,9 +73,11 @@ function createComment(comment) {
   opinionsItem.appendChild(opinionsBox1);
   opinionsList.appendChild(opinionsItem);
 }
+
 // make site go through the array and loop, that creates the rest of the comments
 
 function displayComments() {
+  opinionsList.innerText = "";
   for (let i = 0; i < opinionsData.length; i++) {
     createComment(opinionsData[i]);
   }
@@ -78,13 +86,22 @@ function displayComments() {
 //make submit to do something
 
 displayComments();
+
 const form = document.querySelector(".comments__form");
 form.addEventListener("submit", handleSubmit);
 
 function handleSubmit(event) {
   event.preventDefault();
-  // console.log(event);
-  event.target.yourComment;
-}
 
-//console.log(opinionsData[i]);
+  const now = Date.now();
+  const formattedDate = new Date(now).toLocaleDateString();
+  const newEntry = {
+    name: event.target.fullName.value,
+    comment: event.target.yourComment.value,
+    date: formattedDate,
+  };
+  opinionsData.unshift(newEntry);
+  //console.log(opinionsData);
+
+  displayComments();
+}

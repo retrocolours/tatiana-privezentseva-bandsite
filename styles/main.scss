@@ -473,9 +473,13 @@ a {
     width: 36px;
     height: 34px;
     border-radius: 50%;
-    background-color: green;
     object-fit: cover;
     object-position: left;
+    background-color: $secondary-color2;
+  }
+
+  &__image--indefined {
+    background-color: $secondary-color2;
   }
 
   &__info {

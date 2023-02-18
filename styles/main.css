@@ -524,11 +524,14 @@ a {
   width: 36px;
   height: 34px;
   border-radius: 50%;
-  background-color: green;
   -o-object-fit: cover;
      object-fit: cover;
   -o-object-position: left;
      object-position: left;
+  background-color: #e1e1e1;
+}
+.opinions__image--indefined {
+  background-color: #e1e1e1;
 }
 .opinions__info {
   flex: 3;
