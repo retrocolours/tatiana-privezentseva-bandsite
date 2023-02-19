@@ -56,8 +56,7 @@ const showData = [
 ];
 
 const showList = document.getElementById("schedule__list");
-for (let i = 0; i < showData.length; i++) {
-  //console.log(showData[i]);
+function createEntry(show) {
   const showItem = document.createElement("li");
   showItem.classList.add("schedule__item");
 
@@ -65,32 +64,32 @@ for (let i = 0; i < showData.length; i++) {
   showBox.classList.add("schedule__info");
 
   const showDate = document.createElement("p");
-  showDate.innerText = showData[i].title1;
+  showDate.innerText = show.title1;
   showDate.classList.add("schedule__main");
 
   const showDay = document.createElement("p");
-  showDay.innerText = showData[i].date;
+  showDay.innerText = show.date;
   showDay.classList.add("schedule__secondary");
   showDay.classList.add("schedule__secondary--bold");
 
   const showVenue = document.createElement("p");
-  showVenue.innerText = showData[i].title2;
+  showVenue.innerText = show.title2;
   showVenue.classList.add("schedule__main");
 
   const showPlace = document.createElement("p");
-  showPlace.innerText = showData[i].venue;
+  showPlace.innerText = show.venue;
   showPlace.classList.add("schedule__secondary");
 
   const showLocation = document.createElement("p");
-  showLocation.innerText = showData[i].title3;
+  showLocation.innerText = show.title3;
   showLocation.classList.add("schedule__main");
 
   const showCity = document.createElement("p");
-  showCity.innerText = showData[i].location;
+  showCity.innerText = show.location;
   showCity.classList.add("schedule__secondary");
 
   const showButton = document.createElement("button");
-  showButton.innerText = showData[i].button;
+  showButton.innerText = show.button;
   showButton.classList.add("schedule__btn");
 
   showBox.appendChild(showDate);
@@ -105,17 +104,25 @@ for (let i = 0; i < showData.length; i++) {
   showList.appendChild(showItem);
 }
 
-const paragraphs = document.querySelectorAll('.schedule__item');
-
-function paragraphClick(event) {
-
-  paragraphs.forEach(paragraphs => {
-    paragraphs.classList.remove('selected');
-  });
-  
-  event.currentTarget.classList.add('selected');
+function displayEntries() {
+  showList.innerText = "";
+  for (let i = 0; i < showData.length; i++) {
+    createEntry(showData[i]);
+  }
 }
 
-paragraphs.forEach(paragraphs => {
-  paragraphs.addEventListener('click', paragraphClick);
+displayEntries();
+
+const paragraphs = document.querySelectorAll(".schedule__item");
+
+function paragraphClick(event) {
+  paragraphs.forEach((paragraphs) => {
+    paragraphs.classList.remove("selected");
+  });
+
+  event.currentTarget.classList.add("selected");
+}
+
+paragraphs.forEach((paragraphs) => {
+  paragraphs.addEventListener("click", paragraphClick);
 });
