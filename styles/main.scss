@@ -372,6 +372,7 @@ a {
 .comments {
   padding-left: 1.5rem;
   padding-right: 1.5rem;
+
   color: $primary-color1;
 
   &__title {
@@ -417,6 +418,20 @@ a {
     padding: 0.5rem;
   }
 
+  &__text--active {
+    background-color: $secondary-color3;
+    border: solid $primary-color1;
+    border-radius: 5px;
+    padding: 0.5rem;
+  }
+
+  &__text--error {
+    background-color: $secondary-color3;
+    border: solid red;
+    border-radius: 5px;
+    padding: 0.5rem;
+  }
+
   &__btn {
     background-color: $primary-color1;
     color: $primary-color3;
@@ -456,17 +471,18 @@ a {
   &__box {
     display: flex;
     flex-direction: row;
+    margin-top: 1rem;
   }
 
   &__main {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
+    padding-bottom: 0.5rem;
   }
 
   &__avatar {
     flex: 1;
-    
   }
 
   &__image {
@@ -483,7 +499,7 @@ a {
   }
 
   &__info {
-    flex: 3;
+    flex: 4;
   }
 
   &__name {
@@ -496,6 +512,8 @@ a {
 
   &__text {
     font-weight: 400;
+    line-height: 1.1rem;
+    padding-bottom: 0.5rem;
   }
 }
 

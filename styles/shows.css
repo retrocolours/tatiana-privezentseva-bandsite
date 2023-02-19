@@ -123,26 +123,10 @@ a {
 @media screen and (min-width: 1280px) {
   .nav__list-item {
     padding-bottom: 1.5rem;
-    width: 50%;
   }
 }
 .nav__list-item--highlight, .nav__list-item:hover {
   border-bottom: #fff 0.2rem solid;
-  width: 50%;
-}
-@media screen and (min-width: 768px) {
-  .nav__list-item--highlight, .nav__list-item:hover {
-    width: -webkit-fit-content;
-    width: -moz-fit-content;
-    width: fit-content;
-  }
-}
-@media screen and (min-width: 1280px) {
-  .nav__list-item--highlight, .nav__list-item:hover {
-    width: -webkit-fit-content;
-    width: -moz-fit-content;
-    width: fit-content;
-  }
 }
 .nav__list-link--highlight {
   color: #ffffff;
@@ -230,28 +214,32 @@ a {
   }
 }
 .hero__player {
+  padding-top: 1rem;
+  padding-bottom: 1rem;
   width: 99%;
-  height: 7rem;
+  height: 8rem;
 }
 @media screen and (min-width: 768px) {
   .hero__player {
     margin-top: 2rem;
     width: 59%;
-    height: 8.5rem;
+    height: 10.3rem;
   }
 }
 @media screen and (min-width: 1280px) {
   .hero__player {
     width: 35%;
+    height: 10.5rem;
   }
 }
 
 .schedule {
-  margin-top: 2rem;
+  margin-top: 1rem;
   padding-bottom: 1rem;
 }
 @media screen and (min-width: 768px) {
   .schedule {
+    margin-top: 2rem;
     margin-bottom: 1rem;
     padding-left: 1rem;
     padding-right: 1rem;
@@ -260,6 +248,9 @@ a {
 @media screen and (min-width: 1280px) {
   .schedule {
     display: flex;
+    padding-left: 7rem;
+    padding-right: 7rem;
+    margin-top: 1.7rem;
   }
 }
 .schedule__title {
@@ -267,7 +258,7 @@ a {
   font-weight: 600;
   padding-left: 1rem;
   padding-right: 1rem;
-  padding-bottom: 1rem;
+  padding-bottom: 1.7rem;
   padding-top: 1rem;
   line-height: 0.8rem;
 }
@@ -280,12 +271,15 @@ a {
 }
 @media screen and (min-width: 1280px) {
   .schedule__title {
+    color: #323232;
     flex: 1;
+    font-size: 2.3rem;
   }
 }
 @media screen and (min-width: 1280px) {
   .schedule__container {
     flex: 3;
+    margin-top: 1.8rem;
   }
 }
 .schedule__main {
@@ -316,13 +310,12 @@ a {
 }
 .schedule__main--tablet {
   color: #afafaf;
-  font-size: 0.8rem;
+  font-size: 0.7rem;
   font-weight: 600;
   text-transform: uppercase;
-  margin: 0;
-  padding: 0;
   line-height: 1rem;
   padding-top: 0.5rem;
+  padding-bottom: 1rem;
   width: 23%;
 }
 .schedule__secondary {

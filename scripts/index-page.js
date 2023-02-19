@@ -88,10 +88,14 @@ function displayComments() {
 displayComments();
 
 const form = document.querySelector(".comments__form");
+const inputFields = document.querySelectorAll(".comments__text");
 form.addEventListener("submit", handleSubmit);
 
 function handleSubmit(event) {
   event.preventDefault();
+
+  
+  
 
   const now = Date.now();
   const formattedDate = new Date(now).toLocaleDateString();
@@ -100,8 +104,12 @@ function handleSubmit(event) {
     comment: event.target.yourComment.value,
     date: formattedDate,
   };
+  
+
   opinionsData.unshift(newEntry);
   //console.log(opinionsData);
 
   displayComments();
 }
+
+

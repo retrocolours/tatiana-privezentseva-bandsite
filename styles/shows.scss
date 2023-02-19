@@ -98,21 +98,12 @@ a {
 
     @include desktop {
       padding-bottom: 1.5rem;
-      width: 50%;
     }
   }
 
   &__list-item--highlight,
   &__list-item:hover {
     border-bottom: #fff 0.2rem solid;
-    width: 50%;
-    @include tablet {
-      width: fit-content;
-    }
-
-    @include desktop {
-      width: fit-content;
-    }
   }
 
   &__list-link--highlight {
@@ -197,26 +188,30 @@ a {
   }
 
   &__player {
+    padding-top: 1rem;
+    padding-bottom: 1rem;
     width: 99%;
-    height: 7rem;
+    height: 8rem;
 
     @include tablet {
       margin-top: 2rem;
       width: 59%;
-      height: 8.5rem;
+      height: 10.3rem;
     }
 
     @include desktop {
       width: 35%;
+      height: 10.5rem;
     }
   }
 }
 
 .schedule {
-  margin-top: 2rem;
+  margin-top: 1rem;
   padding-bottom: 1rem;
 
   @include tablet {
+    margin-top: 2rem;
     margin-bottom: 1rem;
     padding-left: 1rem;
     padding-right: 1rem;
@@ -224,6 +219,9 @@ a {
 
   @include desktop {
     display: flex;
+    padding-left: 7rem;
+    padding-right: 7rem;
+    margin-top: 1.7rem;
   }
 
   &__title {
@@ -231,7 +229,7 @@ a {
     font-weight: 600;
     padding-left: 1rem;
     padding-right: 1rem;
-    padding-bottom: 1rem;
+    padding-bottom: 1.7rem;
     padding-top: 1rem;
     line-height: 0.8rem;
 
@@ -242,13 +240,16 @@ a {
     }
 
     @include desktop {
+      color: $primary-color1;
       flex: 1;
+      font-size: 2.3rem;
     }
   }
 
   &__container {
     @include desktop {
       flex: 3;
+      margin-top: 1.8rem;
     }
   }
 
@@ -279,13 +280,12 @@ a {
 
   &__main--tablet {
     color: $primary-color2;
-    font-size: 0.8rem;
+    font-size: 0.7rem;
     font-weight: 600;
     text-transform: uppercase;
-    margin: 0;
-    padding: 0;
     line-height: 1rem;
     padding-top: 0.5rem;
+    padding-bottom: 1rem;
     width: 23%;
   }
 
@@ -360,7 +360,6 @@ a {
   background-color: $secondary-color2;
   &:hover {
     background-color: $secondary-color2;
-
   }
 }
 .dummy {

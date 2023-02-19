@@ -467,6 +467,18 @@ a {
   border-radius: 5px;
   padding: 0.5rem;
 }
+.comments__text--active {
+  background-color: #fafafa;
+  border: solid #323232;
+  border-radius: 5px;
+  padding: 0.5rem;
+}
+.comments__text--error {
+  background-color: #fafafa;
+  border: solid red;
+  border-radius: 5px;
+  padding: 0.5rem;
+}
 .comments__btn {
   background-color: #323232;
   color: #ffffff;
@@ -511,11 +523,13 @@ a {
 .opinions__box {
   display: flex;
   flex-direction: row;
+  margin-top: 1rem;
 }
 .opinions__main {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
+  padding-bottom: 0.5rem;
 }
 .opinions__avatar {
   flex: 1;
@@ -534,7 +548,7 @@ a {
   background-color: #e1e1e1;
 }
 .opinions__info {
-  flex: 3;
+  flex: 4;
 }
 .opinions__name {
   font-weight: 600;
@@ -544,6 +558,8 @@ a {
 }
 .opinions__text {
   font-weight: 400;
+  line-height: 1.1rem;
+  padding-bottom: 0.5rem;
 }
 
 .footer {

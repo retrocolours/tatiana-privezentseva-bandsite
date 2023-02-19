@@ -40,8 +40,8 @@ const showData = [
     title2: "venue",
     title3: "location",
     date: "Fri Nov 26 2021",
-    venue: "Ronald Lane",
-    location: "Moscow Center",
+    venue: "Moscow Center",
+    location: "San Francisco, CA",
     button: "Buy Tickets",
   },
   {
