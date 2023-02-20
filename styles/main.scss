@@ -380,6 +380,11 @@ a {
     margin-top: 3rem;
   }
 
+  @include desktop {
+    padding-left: 7.9rem;
+    padding-right: 7.9rem;
+  }
+
   &__title {
     font-size: 1.4rem;
     font-weight: 600;
@@ -425,6 +430,10 @@ a {
 
     @include tablet {
       width: 500px;
+    }
+
+    @include desktop {
+      width: 400px;
     }
   }
 
@@ -477,6 +486,13 @@ a {
       top: 1rem;
       height: 2.6rem;
     }
+
+    @include desktop {
+      left: 15.7rem;
+      width: 38%;
+      top: 0.5rem;
+      margin-bottom: 0;
+    }
   }
 }
 
@@ -501,6 +517,11 @@ a {
     padding-right: 6rem;
     padding-left: 7rem;
     margin-bottom: 2rem;
+  }
+
+  @include desktop {
+    padding-left: 25rem;
+    padding-right: 23rem;
   }
 
   &__list {
