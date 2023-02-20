@@ -372,21 +372,36 @@ a {
 .comments {
   padding-left: 1.5rem;
   padding-right: 1.5rem;
-
   color: $primary-color1;
+
+  @include tablet {
+    padding-left: 2.5rem;
+    padding-right: 2.5rem;
+    margin-top: 3rem;
+  }
 
   &__title {
     font-size: 1.4rem;
     font-weight: 600;
     margin-top: 0.5rem;
+
+    @include tablet {
+      font-size: 2.2rem;
+      margin-bottom: 2rem;
+    }
   }
 
   &__box {
     display: flex;
+    gap: 1rem;
+
+    @include tablet {
+      justify-content: center;
+      padding-bottom: 2rem;
+    }
   }
 
   &__avatar {
-    flex: 1;
     padding-top: 2rem;
   }
 
@@ -396,12 +411,21 @@ a {
     border-radius: 50%;
     object-fit: cover;
     object-position: left;
+
+    @include tablet {
+      width: 50px;
+      height: 49px;
+    }
   }
 
   &__form {
     display: flex;
     flex-direction: column;
-    flex: 3;
+    flex: 1;
+
+    @include tablet {
+      width: 500px;
+    }
   }
 
   &__label {
@@ -409,6 +433,10 @@ a {
     font-size: 0.6rem;
     font-weight: 600;
     text-transform: uppercase;
+
+    @include tablet {
+      font-size: 0.7rem;
+    }
   }
 
   &__text {
@@ -416,20 +444,16 @@ a {
     border: solid $secondary-color2;
     border-radius: 5px;
     padding: 0.5rem;
+
+    @include tablet {
+      height: 6.2rem;
+    }
   }
 
-  &__text--active {
-    background-color: $secondary-color3;
-    border: solid $primary-color1;
-    border-radius: 5px;
-    padding: 0.5rem;
-  }
-
-  &__text--error {
-    background-color: $secondary-color3;
-    border: solid red;
-    border-radius: 5px;
-    padding: 0.5rem;
+  &__text--tablet {
+    @include tablet {
+      height: 3.2rem;
+    }
   }
 
   &__btn {
@@ -445,11 +469,23 @@ a {
     border-radius: 5px;
     margin-bottom: 1rem;
     margin-top: 1rem;
+
+    @include tablet {
+      width: 30%;
+      position: relative;
+      left: 22rem;
+      top: 1rem;
+      height: 2.6rem;
+    }
   }
 }
 
 ::placeholder {
   color: $primary-color1;
+
+  @include tablet {
+    padding-left: 0.3rem;
+  }
 }
 
 .opinions {
@@ -459,19 +495,28 @@ a {
   line-height: 1rem;
   padding-left: 1.5rem;
   padding-right: 1.5rem;
+  margin-bottom: 1rem;
+
+  @include tablet {
+    padding-right: 6rem;
+    padding-left: 7rem;
+    margin-bottom: 2rem;
+  }
 
   &__list {
     list-style: none;
+    border-top: 1px solid $secondary-color2;
   }
 
   &__item {
-    border-top: 1px solid $secondary-color2;
+    border-bottom: 1px solid $secondary-color2;
   }
 
   &__box {
     display: flex;
     flex-direction: row;
     margin-top: 1rem;
+    gap: 1rem;
   }
 
   &__main {
@@ -481,10 +526,6 @@ a {
     padding-bottom: 0.5rem;
   }
 
-  &__avatar {
-    flex: 1;
-  }
-
   &__image {
     width: 36px;
     height: 34px;
@@ -492,28 +533,46 @@ a {
     object-fit: cover;
     object-position: left;
     background-color: $secondary-color2;
+
+    @include tablet {
+      width: 50px;
+      height: 49px;
+    }
   }
 
   &__image--indefined {
     background-color: $secondary-color2;
+
+    @include tablet {
+      width: 50px;
+      height: 49px;
+    }
   }
 
   &__info {
-    flex: 4;
+    flex: 1;
   }
 
   &__name {
     font-weight: 600;
+    color: $primary-color1;
   }
 
   &__date {
     font-weight: 400;
+    color: $primary-color2;
   }
 
   &__text {
     font-weight: 400;
     line-height: 1.1rem;
     padding-bottom: 0.5rem;
+
+    @include tablet {
+      font-size: 0.9rem;
+      line-height: 1.4rem;
+      padding-bottom: 2rem;
+    }
   }
 }
 

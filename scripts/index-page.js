@@ -94,9 +94,6 @@ form.addEventListener("submit", handleSubmit);
 function handleSubmit(event) {
   event.preventDefault();
 
-  
-  
-
   const now = Date.now();
   const formattedDate = new Date(now).toLocaleDateString();
   const newEntry = {
@@ -104,12 +101,9 @@ function handleSubmit(event) {
     comment: event.target.yourComment.value,
     date: formattedDate,
   };
-  
 
   opinionsData.unshift(newEntry);
   //console.log(opinionsData);
 
   displayComments();
 }
-
-

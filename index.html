@@ -148,18 +148,21 @@
             <form id="comments__form" class="comments__form">
               <label for="name" class="comments__label">Name</label>
               <input
-                class="comments__text" 
-                type="text" 
+                class="comments__text comments__text--tablet"
+                type="text"
                 placeholder="Enter your name"
-                name="fullName" required
+                name="fullName"
+                required
               />
+
               <label for="comment" class="comments__label">Comment</label>
               <textarea
                 class="comments__text"
                 placeholder="Add a new comment"
-                rows="4"
+                rows="5"
                 cols="30"
-                name="yourComment" required
+                name="yourComment"
+                required
               ></textarea>
               <button class="comments__btn" type="submit">Comment</button>
             </form>
@@ -169,7 +172,7 @@
 
       <section class="opinions">
         <ul id="opinions__list" class="opinions__list">
-        <!-- <li class="opinions__item">
+          <!-- <li class="opinions__item">
         <div class="opinions__box">
           <div class="opinions__avatar">
          <img class="opinions__image"  />
@@ -272,8 +275,6 @@
       </div>
     </footer>
 
-    <script src="./scripts/index-page.js">
-
-    </script>
+    <script src="./scripts/index-page.js"></script>
   </body>
 </html>
