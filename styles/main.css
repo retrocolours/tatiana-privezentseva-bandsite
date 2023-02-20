@@ -642,6 +642,11 @@ a {
   .opinions__image--indefined {
     width: 50px;
     height: 49px;
+    border-radius: 50%;
+    -o-object-fit: cover;
+       object-fit: cover;
+    -o-object-position: left;
+       object-position: left;
   }
 }
 .opinions__info {
