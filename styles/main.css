@@ -636,6 +636,13 @@ a {
   }
 }
 .opinions__image--indefined {
+  width: 36px;
+  height: 34px;
+  border-radius: 50%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  -o-object-position: left;
+     object-position: left;
   background-color: #e1e1e1;
 }
 @media screen and (min-width: 768px) {

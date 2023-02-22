@@ -586,6 +586,11 @@ a {
   }
 
   &__image--indefined {
+    width: 36px;
+    height: 34px;
+    border-radius: 50%;
+    object-fit: cover;
+    object-position: left;
     background-color: $secondary-color2;
 
     @include tablet {
