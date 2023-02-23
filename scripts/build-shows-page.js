@@ -55,7 +55,6 @@
 // ];
 // const showData = []
 
-
 const showList = document.getElementById("schedule__list");
 function createEntry(show) {
   const showItem = document.createElement("li");
@@ -127,6 +126,15 @@ function getAPIData() {
           showdates.location,
           showList
         );
+        // function attachEventListener(paragraph) {
+        //   paragraph.addEventListener("click", paragraphClick);
+        // }
+        // paragraphs.forEach(attachEventListener);
+
+        const paragraphs = document.querySelectorAll(".schedule__item");
+        paragraphs.forEach((paragraph) => {
+          paragraph.addEventListener("click", paragraphClick);
+        });
       });
     })
     .catch((error) => {
@@ -138,24 +146,20 @@ getAPIData();
 function displayEntries() {
   showList.innerText = "";
   for (let i = 0; i < showData.length; i++) {
-    console.log("date", showData[0].date);
-    console.log("location", showData[0].location);
-    console.log("place", showData[0].place);
+    //console.log("date", showData[0].date);
+    //console.log("location", showData[0].location);
+    //console.log("place", showData[0].place);
     createEntry(showData[i]);
   }
 }
 displayEntries();
 
-const paragraphs = document.querySelectorAll(".schedule__item");
-
 function paragraphClick(event) {
-  paragraphs.forEach((paragraphs) => {
-    paragraphs.classList.remove("selected");
-  });
+  const paragraphs = document.querySelectorAll(".schedule__item");
 
+  paragraphs.forEach((paragraph) => {
+    paragraph.classList.remove("selected");
+  });
+  console.log("paragraph", paragraphs);
   event.currentTarget.classList.add("selected");
 }
-
-paragraphs.forEach((paragraphs) => {
-  paragraphs.addEventListener("click", paragraphClick);
-});
