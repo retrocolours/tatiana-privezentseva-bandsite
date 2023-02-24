@@ -145,30 +145,33 @@
               alt="avatar"
             />
           </div>
-          <div class="comments__container">
+       
             <form id="comments__form" class="comments__form">
               <label for="name" class="comments__label">Name</label>
               <input
+              id="name"
                 class="comments__text comments__text--tablet"
                 type="text"
                 placeholder="Enter your name"
                 name="fullName"
-                required
+              
               />
 
               <label for="comment" class="comments__label">Comment</label>
               <textarea
+              id="comment"
                 class="comments__text"
                 placeholder="Add a new comment"
                 rows="5"
                 cols="30"
+                style="resize:none"
                 name="yourComment"
-                required
+        
               ></textarea>
               <button class="comments__btn" type="submit">Comment</button>
             </form>
           </div>
-        </div>
+     
       </section>
 
       <section class="opinions">

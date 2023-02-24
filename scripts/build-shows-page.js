@@ -1,11 +1,9 @@
 //   {
-//     title1: "date",
-//     title2: "venue",
-//     title3: "location",
+//     ,
 //     date: "Mon Sept 06 2021",
 //     venue: "Ronald Lane",
 //     location: "San Francisco, CA",
-//     button: "Buy Tickets",
+//     
 //   },
 //   {
 //     title1: "date",

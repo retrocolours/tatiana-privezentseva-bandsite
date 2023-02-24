@@ -54,7 +54,9 @@ function createComment(comment) {
   opinionsName.classList.add("opinions__name");
 
   const opinionsDate = document.createElement("p");
-  opinionsDate.innerText = new Date(comment.timestamp).toLocaleDateString();
+  opinionsDate.innerText = new Date(comment.timestamp).toLocaleDateString(
+    "en-US"
+  );
   opinionsDate.classList.add("opinions__date");
 
   const opinionsText = document.createElement("p");

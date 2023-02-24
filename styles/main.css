@@ -99,16 +99,16 @@ a {
   font-size: 0.8rem;
   font-weight: 400;
   width: 100%;
-  height: 100%;
+  display: inline-block;
+}
+.nav__list-link:hover {
+  color: #ffffff;
 }
 @media screen and (min-width: 768px) {
   .nav__list-link {
     font-size: 0.9rem;
+    padding-bottom: 1rem;
   }
-}
-.nav__list-link:hover {
-  color: #ffffff;
-  width: 50%;
 }
 .nav__list-item {
   width: 50%;
@@ -116,7 +116,6 @@ a {
 }
 @media screen and (min-width: 768px) {
   .nav__list-item {
-    padding-bottom: 1rem;
     width: 30%;
   }
 }
@@ -484,16 +483,17 @@ a {
 .comments__form {
   display: flex;
   flex-direction: column;
-  flex: 1;
+  width: 100%;
+  max-width: 100%;
 }
 @media screen and (min-width: 768px) {
   .comments__form {
-    width: 500px;
+    max-width: 80%;
   }
 }
 @media screen and (min-width: 1280px) {
   .comments__form {
-    width: 400px;
+    max-width: 40%;
   }
 }
 .comments__label {
@@ -526,7 +526,6 @@ a {
 .comments__btn {
   background-color: #323232;
   color: #ffffff;
-  width: 100%;
   height: 2.3rem;
   font-size: 0.8rem;
   font-weight: 600;
@@ -536,14 +535,12 @@ a {
   border-radius: 5px;
   margin-bottom: 1rem;
   margin-top: 1rem;
+  cursor: pointer;
 }
 @media screen and (min-width: 768px) {
   .comments__btn {
-    width: 30%;
-    position: relative;
-    left: 22rem;
-    top: 1rem;
-    height: 2.6rem;
+    padding: 0.7rem 2rem;
+    margin-left: auto;
   }
 }
 @media screen and (min-width: 1280px) {
@@ -559,18 +556,11 @@ a {
   color: #323232;
 }
 
-:-ms-input-placeholder {
-  color: #323232;
-}
-
 ::placeholder {
   color: #323232;
 }
 @media screen and (min-width: 768px) {
   ::-moz-placeholder {
-    padding-left: 0.3rem;
-  }
-  :-ms-input-placeholder {
     padding-left: 0.3rem;
   }
   ::placeholder {
