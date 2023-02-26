@@ -79,36 +79,24 @@ a {
     font-size: 0.8rem;
     font-weight: 400;
     width: 100%;
-    // height: 100%;
+
     display: inline-block;
-   
+
     &:hover {
       color: $primary-color3;
-      
-      //width: 50%;
     }
 
     @include tablet {
       font-size: 0.9rem;
       padding-bottom: 1rem;
-     
     }
-    
   }
-
-  // &__list-link:hover {
-  //   color: $primary-color3;
-  //   display: inline-block;
-  //   width: 100%;
-  //   //width: 50%;
-  // }
 
   &__list-item {
     width: 50%;
     text-align: center;
 
     @include tablet {
-      //padding-bottom: 1rem;
       width: 30%;
     }
 
@@ -120,14 +108,12 @@ a {
   &__list-item--highlight,
   &__list-item:hover {
     border-bottom: #fff 0.2rem solid;
-    
   }
 
   &__list-link--highlight {
     color: $primary-color3;
     font-size: 0.8rem;
     font-weight: 600;
-    
 
     @include tablet {
       font-size: 0.9rem;
@@ -464,17 +450,14 @@ a {
   &__form {
     display: flex;
     flex-direction: column;
-    //flex: 1;
     width: 100%;
     max-width: 100%;
 
     @include tablet {
-      //width: 500px;
       max-width: 80%;
     }
 
     @include desktop {
-      //width: 400px;
       max-width: 40%;
     }
   }
@@ -510,7 +493,7 @@ a {
   &__btn {
     background-color: $primary-color1;
     color: $primary-color3;
-  
+
     height: 2.3rem;
     font-size: 0.8rem;
     font-weight: 600;
@@ -523,16 +506,19 @@ a {
     cursor: pointer;
 
     @include tablet {
-      padding: 0.7rem 2rem;
-     margin-left: auto;
-      
+      padding: 0.7rem 2.5rem;
+      margin-left: auto;
+      height: 2.6rem;
+      width: 30%;
+      font-size: 1rem;
     }
 
     @include desktop {
       left: 15.7rem;
-      width: 38%;
+      width: 40%;
       top: 0.5rem;
       margin-bottom: 0;
+      height: 2.6rem;
     }
   }
 }
@@ -555,14 +541,14 @@ a {
   margin-bottom: 1rem;
 
   @include tablet {
-    padding-right: 6rem;
-    padding-left: 7rem;
+    padding-right: 4.5rem;
+    padding-left: 4.5rem;
     margin-bottom: 2rem;
   }
 
   @include desktop {
     padding-left: 25rem;
-    padding-right: 23rem;
+    padding-right: 25rem;
   }
 
   &__list {

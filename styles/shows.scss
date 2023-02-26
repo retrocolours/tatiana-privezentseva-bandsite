@@ -79,16 +79,17 @@ a {
     font-size: 0.8rem;
     font-weight: 400;
     width: 100%;
-    height: 100%;
+
+    display: inline-block;
+
+    &:hover {
+      color: $primary-color3;
+    }
 
     @include tablet {
       font-size: 0.9rem;
+      padding-bottom: 1rem;
     }
-  }
-
-  &__list-link:hover {
-    color: $primary-color3;
-    width: 50%;
   }
 
   &__list-item {
@@ -96,7 +97,6 @@ a {
     text-align: center;
 
     @include tablet {
-      padding-bottom: 1rem;
       width: 30%;
     }
 
@@ -326,7 +326,6 @@ a {
 
     &:hover {
       background-color: $secondary-color3;
-      
     }
   }
 

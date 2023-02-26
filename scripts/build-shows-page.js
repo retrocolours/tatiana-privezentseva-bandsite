@@ -3,7 +3,7 @@
 //     date: "Mon Sept 06 2021",
 //     venue: "Ronald Lane",
 //     location: "San Francisco, CA",
-//     
+//
 //   },
 //   {
 //     title1: "date",

@@ -539,16 +539,20 @@ a {
 }
 @media screen and (min-width: 768px) {
   .comments__btn {
-    padding: 0.7rem 2rem;
+    padding: 0.7rem 2.5rem;
     margin-left: auto;
+    height: 2.6rem;
+    width: 30%;
+    font-size: 1rem;
   }
 }
 @media screen and (min-width: 1280px) {
   .comments__btn {
     left: 15.7rem;
-    width: 38%;
+    width: 40%;
     top: 0.5rem;
     margin-bottom: 0;
+    height: 2.6rem;
   }
 }
 
@@ -579,15 +583,15 @@ a {
 }
 @media screen and (min-width: 768px) {
   .opinions {
-    padding-right: 6rem;
-    padding-left: 7rem;
+    padding-right: 4.5rem;
+    padding-left: 4.5rem;
     margin-bottom: 2rem;
   }
 }
 @media screen and (min-width: 1280px) {
   .opinions {
     padding-left: 25rem;
-    padding-right: 23rem;
+    padding-right: 25rem;
   }
 }
 .opinions__list {
